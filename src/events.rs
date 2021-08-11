@@ -1,6 +1,6 @@
 pub enum Event {
     DiscoverPeers,
-    MessagePeer(Message)
+    Message(Message)
 }
 
 pub struct Message {
