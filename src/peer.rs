@@ -5,7 +5,7 @@ pub struct Peer {
 }
 
 impl Peer {
-    pub fn new(ip: String, port: String) -> Peer {
+    pub fn new(ip: String, port: String) -> Self {
         Peer {
             peer_address: ip,
             listen_port: port,
@@ -13,5 +13,12 @@ impl Peer {
         }
     }
 
+    pub fn get_ip(&mut self) -> String {
+        self.peer_address.clone()
+    }
+
+    pub fn get_port(&mut self) -> String {
+        self.listen_port.clone()
+    }
 
 }
