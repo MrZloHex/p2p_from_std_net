@@ -1,9 +1,9 @@
-pub struct Event {}
-
-impl Event {
+pub enum Event {
+    DiscoverPeers,
+    MessagePeer(Message)
 }
 
-pub enum EventType {
-    DiscoverPeers,
-    Message
+pub struct Message {
+    message: String,
+    author: String
 }
