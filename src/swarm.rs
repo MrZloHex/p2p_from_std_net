@@ -15,7 +15,7 @@ impl Swarm {
     }
 
     pub fn listen(&mut self) {
-        let listening_address = format!("{}::{}", self.peer.get_ip(), self.peer.get_port());
-        println!("{}", listening_address);
+        let listening_address = format!("{}:{}", self.peer.get_ip(), self.peer.get_port());
+        println!("{}",  listening_address);
     }
 }
